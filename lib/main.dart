@@ -30,21 +30,20 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // backgroundColor: Color(0xBF453F3F),
       appBar: AppBar(
-        title: Text("Hello Winner213123"),
+        title: Text("Hello Winner"),
+        backgroundColor: Colors.blue,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Count"),
-            Text(
-              number.toString(),
-              style: TextStyle(fontSize: 50),
-            )
-          ],
+      body: Stack(children: <Widget>[
+        Image(
+          image: AssetImage('assets/IconMenuCallculateWinner.png'),
+          height: 70,
+          width: 70,
         ),
-      ),
+        Text("Tax"),
+      ]),
+
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           setState(() {
