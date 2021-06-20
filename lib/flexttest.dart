@@ -14,13 +14,13 @@ class Flexmain extends StatefulWidget {
 class _FlexmainState extends State<Flexmain> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Callculate"),
-        ),
+    return Container(
+        child: Scaffold(
+      backgroundColor: Color(0xFF92D95A),
+      appBar: AppBar(
+        backgroundColor: Color(0xFF92D95A),
+        title: Text("Bar "),
       ),
-      theme: ThemeData(primarySwatch: Colors.green),
-    );
+    ));
   }
 }

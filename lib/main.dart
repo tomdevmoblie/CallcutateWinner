@@ -16,7 +16,6 @@ class Index extends StatelessWidget {
     return MaterialApp(
       title: "Callculate Winner",
       home: Home(),
-      theme: ThemeData(primarySwatch: Colors.green),
     );
   }
 }
@@ -34,6 +33,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xFF92D95A),
         title: Text("Hello Winner"),
       ),
       body: Center(
