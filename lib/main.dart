@@ -35,12 +35,36 @@ class _HomeState extends State<Home> {
       child: Scaffold(
         backgroundColor: Color(0xFF92D95A),
         appBar: new AppBar(
-          title: new Text(
-            "Search Bar",
-            style: TextStyle(color: Colors.black),
+          
+          title: new TextField(
+            style: TextStyle(
+              height: 1.0,              
+            ),
+            cursorColor: Colors.black,
+            decoration: InputDecoration(
+                    filled: true,
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.black, width: 1.5),
+                      borderRadius: BorderRadius.all(Radius.circular(15.0))
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.black, width: 1.5),
+                      borderRadius: BorderRadius.all(Radius.circular(15.0))
+                    ),
+                    fillColor: Color(0xFFF2F2F2),
+                    hintText: "Search",                
+                    prefixIcon: const Icon(
+                      Icons.search,
+                      color: Colors.black,
+                    ),
+                    border: OutlineInputBorder(
+                        borderSide: new BorderSide(color: Colors.black),
+                        borderRadius: BorderRadius.all(Radius.circular(25.0)))),
           ),
           backgroundColor: Colors.transparent,
           elevation: 0.0,
+          
+          
         ),
         body: Container(
           child: Center(
