@@ -31,33 +31,34 @@ class _HomeState extends State<Home> {
   int number = 0;
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
+    return Container(
+      child: Scaffold(
         backgroundColor: Color(0xFF92D95A),
-        title: Text("Hello Winner"),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Count"),
-            Text(
-              number.toString(),
-              style: TextStyle(fontSize: 50),
-            ),
-          ],
+        appBar: new AppBar(
+          title: new Text(
+            "Search Bar",
+            style: TextStyle(color: Colors.black),
+          ),
+          backgroundColor: Colors.transparent,
+          elevation: 0.0,
         ),
-      ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          setState(() {
-            Navigator.pushReplacement(
-                context, MaterialPageRoute(builder: (context) => Tomtest()));
-          });
-        },
-        label: const Text('Callculate'),
-        icon: Icon(Icons.calculate),
-        backgroundColor: Colors.pink,
+        body: Container(
+          child: Text(
+            "Menu",
+            style: TextStyle(color: Colors.black12, fontSize: 60),
+          ),
+        ),
+        floatingActionButton: FloatingActionButton.extended(
+          onPressed: () {
+            setState(() {
+              Navigator.pushReplacement(
+                  context, MaterialPageRoute(builder: (context) => Tomtest()));
+            });
+          },
+          label: const Text('Callculate'),
+          icon: Icon(Icons.calculate),
+          backgroundColor: Colors.pink,
+        ),
       ),
     );
   }
