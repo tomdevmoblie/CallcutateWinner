@@ -43,9 +43,20 @@ class _HomeState extends State<Home> {
           elevation: 0.0,
         ),
         body: Container(
-          child: Text(
-            "Menu",
-            style: TextStyle(color: Colors.black12, fontSize: 60),
+          child: Center(
+            child:
+                // Text('test'),
+                Image(
+              image: AssetImage('assets/IconMenuCallculateWinner.png'),
+              width: 70,
+              height: 60,
+            ),
+          ),
+          height: 80.0,
+          width: 80,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5),
+            color: Colors.transparent,
           ),
         ),
         floatingActionButton: FloatingActionButton.extended(

@@ -30,13 +30,12 @@ class _FlexmainState extends State<Flexmain> {
         ),
         body: Container(
           child: Center(
-            child:
-                // Text('test'),
-                Image(
-              image: AssetImage('assets/IconMenuCallculateWinner.png'),
-              width: 70,
-              height: 60,
-            ),
+            child: Text('Menu'),
+            //     Image(
+            //   image: AssetImage('assets/IconMenuCallculateWinner.png'),
+            //   width: 70,
+            //   height: 60,
+            // ),
           ),
           height: 80.0,
           width: 80,
