@@ -52,7 +52,7 @@ class _HomeState extends State<Home> {
           onPressed: () {
             setState(() {
               Navigator.pushReplacement(
-                  context, MaterialPageRoute(builder: (context) => Tomtest()));
+                  context, MaterialPageRoute(builder: (context) => Flexmain()));
             });
           },
           label: const Text('Callculate'),
