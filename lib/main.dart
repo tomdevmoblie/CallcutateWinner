@@ -45,13 +45,15 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           setState(() {
             number++;
           });
         },
-        child: Icon(Icons.calculate),
+        label: const Text('Callculate'),
+        icon: Icon(Icons.calculate),
+        backgroundColor: Colors.pink,
       ),
     );
   }
