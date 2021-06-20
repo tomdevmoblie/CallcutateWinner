@@ -1,4 +1,7 @@
+import 'package:callculatewinner/Tom.dart';
 import 'package:flutter/material.dart';
+
+import 'flexttest.dart';
 
 void main() {
   print("Hello");
@@ -41,14 +44,15 @@ class _HomeState extends State<Home> {
             Text(
               number.toString(),
               style: TextStyle(fontSize: 50),
-            )
+            ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           setState(() {
-            number++;
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => Tomtest()));
           });
         },
         label: const Text('Callculate'),
