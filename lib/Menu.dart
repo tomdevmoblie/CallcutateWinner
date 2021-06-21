@@ -17,27 +17,36 @@ class Flexmain extends StatefulWidget {
 class _FlexmainState extends State<Flexmain> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: EdgeInsets.all(12),
-          child:
-              // Text('test'),
-              Image(
-            image: AssetImage('assets/IconMenuCallculateWinner.png'),
-            width: 70,
-            height: 60,
-          ),
+    return Container(
+      child: Scaffold(
+        appBar: new AppBar(
+          title: Text('ภาษีมูลค่าเพิ่ม',
+              style: TextStyle(color: Colors.black, fontSize: 18)),
+          actions: [
+            Container(
+              width: 30,
+              child: Icon(Icons.star_border),
+            ),
+            Container(
+              width: 30,
+              child: Icon(Icons.close),
+            ),
+          ],
+          actionsIconTheme: IconThemeData(color: Colors.black, size: 24),
+          elevation: 0,
+          backgroundColor: Colors.white,
         ),
-        Padding(
-          padding: EdgeInsets.all(1),
-          child: Text("TAX",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-              )),
+        body: Column(
+          children: [
+            Row(
+              children: [Text("Result")],
+            ),
+            Row(
+              children: [Text("Input")],
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }
