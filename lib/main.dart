@@ -43,19 +43,19 @@ class _HomeState extends State<Home> {
             decoration: InputDecoration(
                 filled: true,
                 focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.black, width: 1.5),
+                    borderSide: BorderSide(color: Colors.white, width: 1.5),
                     borderRadius: BorderRadius.all(Radius.circular(15.0))),
                 enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.black, width: 1.5),
+                    borderSide: BorderSide(color: Colors.white, width: 1.5),
                     borderRadius: BorderRadius.all(Radius.circular(15.0))),
-                fillColor: Color(0xFFF2F2F2),
+                fillColor: Color(0xFFFFFFFF),
                 hintText: "Search",
                 prefixIcon: const Icon(
                   Icons.search,
                   color: Colors.black,
                 ),
                 border: OutlineInputBorder(
-                    borderSide: new BorderSide(color: Colors.black),
+                    borderSide: new BorderSide(color: Colors.white),
                     borderRadius: BorderRadius.all(Radius.circular(25.0)))),
           ),
           backgroundColor: Colors.transparent,
