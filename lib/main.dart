@@ -35,53 +35,239 @@ class _HomeState extends State<Home> {
       child: Scaffold(
         backgroundColor: Color(0xFF92D95A),
         appBar: new AppBar(
-          
           title: new TextField(
             style: TextStyle(
-              height: 1.0,              
+              height: 1.0,
             ),
             cursorColor: Colors.black,
             decoration: InputDecoration(
-                    filled: true,
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.black, width: 1.5),
-                      borderRadius: BorderRadius.all(Radius.circular(15.0))
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.black, width: 1.5),
-                      borderRadius: BorderRadius.all(Radius.circular(15.0))
-                    ),
-                    fillColor: Color(0xFFF2F2F2),
-                    hintText: "Search",                
-                    prefixIcon: const Icon(
-                      Icons.search,
-                      color: Colors.black,
-                    ),
-                    border: OutlineInputBorder(
-                        borderSide: new BorderSide(color: Colors.black),
-                        borderRadius: BorderRadius.all(Radius.circular(25.0)))),
+                filled: true,
+                focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.all(Radius.circular(15.0))),
+                enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.all(Radius.circular(15.0))),
+                fillColor: Color(0xFFF2F2F2),
+                hintText: "Search",
+                prefixIcon: const Icon(
+                  Icons.search,
+                  color: Colors.black,
+                ),
+                border: OutlineInputBorder(
+                    borderSide: new BorderSide(color: Colors.black),
+                    borderRadius: BorderRadius.all(Radius.circular(25.0)))),
           ),
           backgroundColor: Colors.transparent,
           elevation: 0.0,
-          
-          
         ),
-        body: Container(
-          child: Center(
-            child:
-                // Text('test'),
-                Image(
-              image: AssetImage('assets/IconMenuCallculateWinner.png'),
-              width: 70,
-              height: 60,
+        body: Column(
+          children: [
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                  child: Text(
+                    "รายการโปรด",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                )
+              ],
             ),
-          ),
-          height: 80.0,
-          width: 80,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(5),
-            color: Colors.transparent,
-          ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                      child: Image(
+                        image:
+                            AssetImage('assets/IconMenuCallculateWinner.png'),
+                        width: 80,
+                        height: 80,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 12, right: 12),
+                      child: Text("TAX",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          )),
+                    ),
+                  ],
+                ), //col 1
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                      child: Image(
+                        image:
+                            AssetImage('assets/IconMenuCallculateWinner.png'),
+                        width: 80,
+                        height: 80,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 12, right: 12),
+                      child: Text("TAX",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          )),
+                    ),
+                  ],
+                ), //col 2
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                      child: Image(
+                        image:
+                            AssetImage('assets/IconMenuCallculateWinner.png'),
+                        width: 80,
+                        height: 80,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 12, right: 12),
+                      child: Text("TAX",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          )),
+                    ),
+                  ],
+                ), //col 3
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                      child: Image(
+                        image:
+                            AssetImage('assets/IconMenuCallculateWinner.png'),
+                        width: 80,
+                        height: 80,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 12, right: 12),
+                      child: Text("TAX",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          )),
+                    ),
+                  ],
+                ),
+                //col 4
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                      child: Image(
+                        image:
+                            AssetImage('assets/IconMenuCallculateWinner.png'),
+                        width: 80,
+                        height: 80,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 12, right: 12),
+                      child: Text("TAX",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          )),
+                    ),
+                  ],
+                ), //col 1
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                      child: Image(
+                        image:
+                            AssetImage('assets/IconMenuCallculateWinner.png'),
+                        width: 80,
+                        height: 80,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 12, right: 12),
+                      child: Text("TAX",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          )),
+                    ),
+                  ],
+                ), //col 2
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                      child: Image(
+                        image:
+                            AssetImage('assets/IconMenuCallculateWinner.png'),
+                        width: 80,
+                        height: 80,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 12, right: 12),
+                      child: Text("TAX",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          )),
+                    ),
+                  ],
+                ), //col 3
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                      child: Image(
+                        image:
+                            AssetImage('assets/IconMenuCallculateWinner.png'),
+                        width: 80,
+                        height: 80,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: 12, right: 12),
+                      child: Text("TAX",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                          )),
+                    ),
+                  ],
+                ),
+                //col 4
+              ],
+            ),
+            Row(
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 12, left: 12, right: 12),
+                  child: Text(
+                    "หมวดทั่วไป",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                )
+              ],
+            ),
+          ],
         ),
         floatingActionButton: FloatingActionButton.extended(
           onPressed: () {
@@ -94,6 +280,7 @@ class _HomeState extends State<Home> {
           icon: Icon(Icons.calculate),
           backgroundColor: Colors.pink,
         ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       ),
     );
   }
